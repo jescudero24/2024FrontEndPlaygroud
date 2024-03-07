@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Semana y Día del Año</title>
+<script>
+// Esta función calcula el número de la semana del año
+function obtenerSemanaDelAno() {
+    const hoy = new Date();
+    const primerDiaDelAno = new Date(hoy.getFullYear(), 0, 1);
+    const dias = Math.floor((hoy - primerDiaDelAno) / (24 * 60 * 60 * 1000));
+    const semanaDelAno = Math.ceil((dias + primerDiaDelAno.getDay() + 1) / 7);
+    return semanaDelAno;
+}
+
+// Esta función calcula el día del año
+function obtenerDiaDelAno() {
+    const hoy = new Date();
+    const primerDiaDelAno = new Date(hoy.getFullYear(), 0, 1);
+    const diferencia = hoy - primerDiaDelAno;
+    const unDia = 1000 * 60 * 60 * 24;
+    const diaDelAno = Math.floor(diferencia / unDia) + 1;
+    return diaDelAno;
+}
+
+// Esta función muestra la semana y el día del año
+function mostrarInformacion() {
+    document.getElementById('semana').innerText = "Semana del año: " + obtenerSemanaDelAno();
+    document.getElementById('dia').innerText = "Día del año: " + obtenerDiaDelAno();
+}
+
+// Llama a mostrarInformacion() cuando la página se haya cargado completamente
+window.onload = function() {
+    mostrarInformacion();
+};
+</script>
+</head>
+<body>
+<h1>Información de la Fecha Actual</h1>
+<p id="semana"></p>
+<p id="dia"></p>
+</body>
+</html>

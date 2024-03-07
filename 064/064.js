@@ -20,3 +20,5 @@ const names = ['gartiel', 'vedaskies', 'tomimelo']
 
 modify(names, function(array){
     console.log(`He modificado el array y ahora es de ${array.lengh} elementos`)})
+
+console.log("HM")
