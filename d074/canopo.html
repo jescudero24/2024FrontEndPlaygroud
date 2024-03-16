@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del Arte - Maese Santiago - Canopo</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <style>
+        /* Estilo base para el lightbox, oculto por defecto */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Solo muestra el lightbox cuando su ID es targeteado */
+.lightbox:target {
+    display: flex;
+}
+
+.lightbox-content {
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 0 10px #000;
+    background: #fff;
+}
+
+.lightbox-content-wkp-ytb{
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Organiza los hijos en una columna */
+    height: 80%; /* O el porcentaje/altura deseada */
+    width: 80%; /* Mantiene tu ancho original */
+    box-shadow: 0 0 10px #000;
+    background: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ccc;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* Estilo para las imágenes dentro del lightbox */
+.lightbox img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.plusWiki{
+    padding: 1%;
+    background-color:#ccc;
+    width:auto;
+    height:auto;
+    border:none;
+}
+
+.plusWikiContent{
+    padding:10px; 
+    min-height:400px; 
+    border:none;
+    flex: 1; /* Le dice al iframe que crezca y llene el espacio disponible */
+    width: auto; /* Ocupa el 100% del ancho de su contenedor */
+    border: none;
+    padding: 10px; /* Mantiene tu padding */
+}
+
+.plusIMGContent {
+    padding: 10px;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho y altura */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la imagen y el figcaption dentro de figure */
+    overflow: hidden; /* Previene el desbordamiento del contenido */
+    max-height: 80vh; /* Limita la altura del contenedor a una porción de la altura de la ventana */
+    width: auto; /* Permite que el contenedor ajuste su ancho */
+}
+
+.plusIMGContent img {
+    max-width: 100%; /* Limita el ancho de la imagen al 100% de su contenedor */
+    max-height: 100%; /* Asegura que la imagen no exceda la altura del contenedor */
+    object-fit: contain; /* Asegura que la imagen se escale correctamente dentro de estos límites */
+}
+.fotosPlusAudio{
+    border: 1px solid red;
+    padding:5px;
+    max-width: 500px;
+}
+.gallery{
+    padding:5px;
+    display: flex; /* Activa Flexbox para este contenedor */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+}
+
+.icons-right {
+    margin-left: auto; /* Empuja los elementos con esta clase hacia la derecha */
+}
+
+audio{
+    padding: 5px;
+    width:100%;
+    max-width: 500px;
+
+}
+
+/*Estilo de los botones*/
+
+.plusWiki ul {
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.plusWiki li {
+    margin-bottom: 10px; /* Añade un poco de espacio entre los botones */
+    display: inline-block;
+}
+
+.plusWiki li a {
+    display: inline-block; /* Hace que el enlace ocupe todo el espacio del li */
+    padding: 10px 20px; /* Añade padding para hacer el botón más grande */
+    background-color: #555; /* Color de fondo gris */
+    color: white; /* Texto en color blanco */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Alinea el texto al centro */
+    transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+.plusWiki li a:hover {
+    background-color: #777; /* Cambia el color de fondo al pasar el ratón */
+}
+
+    </style>
+</head>
+<body>
+
+
+    <div>
+        <h1>Vasos Canopos</h1>
+        <p>Los vasos canopos eran recipientes utilizados en el antiguo Egipto durante el proceso de momificación para almacenar y preservar los órganos internos del difunto, considerados esenciales para la vida en el más allá. Estos vasos, generalmente hechos de piedra, cerámica o madera y tapados con tapas que representaban las cabezas de los cuatro hijos de Horus, protegían el hígado, los pulmones, el estómago y los intestinos, asegurando que el espíritu del fallecido pudiera reutilizarlos en la otra vida. Su uso se extendió desde el Reino Antiguo hasta el Período Ptolemaico, reflejando la importancia de las creencias relacionadas con la muerte y el más allá en la cultura egipcia.</p>
+    </div>
+<div class="fotosPlusAudio">
+    
+    <div class="gallery">
+        <a href="#img1"><img src="css/one-closed-svgrepo-com.png" alt="foto1" width="46px"></a>
+        <a href="#img2"><img src="css/two-closed-svgrepo-com.png" alt="foto2" width="46px"></a>
+        <a href="#img3"><img src="css/three-closed-svgrepo-com.png" alt="foto3" width="46px"></a>
+        <a href="#img4"><img src="css/four-closed-svgrepo-com.png" alt="foto4" width="46px"></a>
+        <div class="icons-right">
+        <a href="#plusIMG"><img src="css/image-svgrepo-com.svg" alt="IMG" width="42px"></a>
+        <a href="#plusWKP"><img src="css/wikipedia-logo-svgrepo-com.svg" alt="WKP" width="42px"></a>
+        <a href="#plusYTB"><img src="css/youtube-svgrepo-com.svg" alt="YTB" width="42px"></a>
+        </div>
+        <!-- Repite para más imágenes -->
+    </div>
+    
+    <!-- Lightbox containers -->
+    <div id="img1" class="lightbox">
+        <div class="lightbox-content">
+            <a href="#gallery" class="close">🗙</a>
+            <img src="canopo/IMG-20240310-WA0000.jpg" alt="Imagen 1">
+        </div>
+    </div>
+    
+    <div id="img2" class="lightbox">
+        <div class="lightbox-content">
+            <a href="#gallery" class="close">🗙</a>
+            <img src="canopo/IMG-20240310-WA0001.jpg" alt="Imagen 2">
+        </div>
+    </div>
+
+    <div id="img3" class="lightbox">
+        <div class="lightbox-content">
+            <a href="#gallery" class="close">🗙</a>
+            <img src="canopo/IMG-20240310-WA0002.jpg" alt="Imagen 3">
+        </div>
+    </div>
+    
+    <div id="img4" class="lightbox">
+        <div class="lightbox-content">
+            <a href="#gallery" class="close">🗙</a>
+            <img src="canopo/IMG-20240310-WA0003.jpg" alt="Imagen 4">
+        </div>
+    </div>
+
+    <!-- Repite para más imágenes -->
+
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+<div id="plusIMG" class="lightbox">
+    <div class="lightbox-content-wkp-ytb">
+        <h1 style="margin-left: 1em;color:#555;">Vasos canopos</h1>
+        <a href="#gallery" class="close">🗙</a>
+        <div class="plusWiki">
+            <ul> 
+                <li><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Horus_standing.svg/800px-Horus_standing.svg.png" alt="Horus">Horus</a></li>
+                <li><a href="https://www.researchgate.net/profile/Dr-Yohannes-Woldeyohannes/publication/317372179/figure/fig4/AS:667934481469447@1536259398320/Map-showing-the-Nile-River-with-its-main-branches-White-and-Blue-Niles-and-the-site-of.png" alt="Curso del rio Nilo">Rio Nilo</a></li>
+                <li><a href="https://i.pinimg.com/736x/f2/78/9e/f2789e2e27cec017b8aed34b16a321e1.jpg" alt="Dioses y órganos">Dioses y órganos</a></li>
+                <li><a href="https://live.staticflickr.com/5261/5649330310_06408587fd_z.jpg" alt="Comentario 3">Vasos Canopos 3</a></li>
+                <li><a href="https://i.etsystatic.com/28291599/r/il/7349d5/4750106534/il_570xN.4750106534_lo06.jpg" alt="Comentario 4">Vasos Canopos 4</a></li>
+            </ul>
+        </div>
+        <figure class="plusIMGContent"> <!--En este caso no es conveniente un iframe-->
+            <img id="imgFrame" src="https://i.pinimg.com/736x/f2/78/9e/f2789e2e27cec017b8aed34b16a321e1.jpg" alt="Dioses y órganos">
+            <figcaption>Dioses y órganos</figcaption>
+        </figure>
+    </div>
+</div>
+    
+<script src="cargarIMG.js"></script>
+
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+<div id="plusWKP" class="lightbox">
+    <div class="lightbox-content-wkp-ytb">
+        <h1 style="margin-left: 1em;color:#555;">Vasos canopos</h1>
+        <a href="#gallery" class="close">🗙</a>
+        <div class="plusWiki">
+            <ul>
+                <li><a href="https://es.m.wikipedia.org/wiki/Canopo_(Egipto)" >Canopo (Egipto)</a></li>
+                <li><a href="https://es.m.wikipedia.org/wiki/Vaso_canopo">Vaso Canopo</a></li>
+                <li><a href="https://www.wikiwand.com/en/Canopic_jar">Canopic Jar (EN)</a></li>
+                <li><a href="https://www.wikiwand.com/en/Canopic_chest">Canopic Chest (EN)</a></li>
+            </ul>
+        </div>
+        <iframe id="wikiFrame" class="plusWikiContent"  src="https://es.m.wikipedia.org/wiki/Vaso_canopo"></iframe>
+
+    </div>
+</div>
+    
+<script src="cargarWKP.js"></script>
+
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+<div id="plusYTB" class="lightbox">
+    <div class="lightbox-content-wkp-ytb">
+        <h1 style="margin-left: 1em;color:#555;">Vasos canopos</h1>
+        <a href="#gallery" class="close closeYTB">🗙</a>
+        <div class="plusWiki plusYTB">
+            <ul>
+                <li><a href="https://youtu.be/3O83AIgn9OU?si=3eKum27aDTwh29KP">Momificación Egipcia</a></li>
+                <li><a href="https://youtu.be/FbyylaZWJv8?si=Qv_XrEmfGMbgK94o">Vasos Canopos</a></li>
+                <li><a href="https://youtu.be/CzT_LEdksKI?si=-FB9m_5xYJNxOmNM">Egipto Antiguo</a></li>
+            </ul>
+        </div>
+
+        <iframe id="ytbFrame" class="plusWikiContent" width="auto" height="auto" src="https://www.youtube.com/embed/pFXYUj4yV9w?si=8g05_HhK-Cxwnobo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script src="cargarYTB.js"></script>
+
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+    <audio controls>
+        <source src="canopo/AUD-20240314-WA0003.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+
+</div> <!--Fin del div fotosPlusAudio-->
+    
+
+<div>
+    <h1>Timeline</h1>
+    <div style="
+    font-size: 3em;
+    background-color: #ccc;
+    padding: 1em;
+    max-width: 500px;">
+        2686 a.c. - 30 a.c.
+
+    </div>
+</div>
+
+<div>
+    <h1>Geografía</h1>
+    <div id="map" style="width: 500px; height: 500px;"></div>
+    <script>
+document.addEventListener("DOMContentLoaded", function(){
+    // Crea el mapa y lo centra en las coordenadas del Mediterráneo Oriental
+    var map = L.map('map').setView([33.033333, 31.233334], 5);
+
+    // Añade la capa de OpenTopoMap al mapa
+    L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+
+    // Añade marcadores para puntos de interés cultural en las márgenes del Nilo
+        var culturalPoints = [
+        {lat: 29.9792, lng: 31.1342, popup: "<b>Las Pirámides de Giza</b><br>Uno de los monumentos más icónicos de Egipto."},
+        // Añade otros puntos aquí
+    ];
+
+    culturalPoints.forEach(function(point) {
+        var marker = L.marker([point.lat, point.lng]).addTo(map);
+        marker.bindPopup(point.popup);
+    });
+
+    // Añade marcadores para ciudades y puntos importantes
+    var troyMarker = L.marker([39.9576, 26.2389]).addTo(map);
+    troyMarker.bindPopup("<b>Troya</b><br>Antigua ciudad de gran importancia histórica y mitológica.").openPopup();
+    
+    var alejandriaMarker = L.marker([31.2001, 29.9187]).addTo(map);
+    alejandriaMarker.bindPopup("<b>Alejandría</b><br>Fundada en el s. IV a.c. por Alejandro Magno.").openPopup();
+
+    // El Cairo
+    var cairoMarker = L.marker([30.033333, 31.233334]).addTo(map);
+    cairoMarker.bindPopup("<b>El Cairo</b><br>Población: Aprox. 9.5 millones.<br>Corazón de la cultura egipcia.");
+
+    // Presa de Asuán
+    var aswanDamMarker = L.marker([23.97, 32.87]).addTo(map); // Coordenadas aproximadas de la Presa de Asuán
+    aswanDamMarker.bindPopup("<b>Presa de Asuán</b><br>Una maravilla de la ingeniería moderna, clave para el control de inundaciones y producción de energía en Egipto.");
+
+    // Gran Presa del Renacimiento Etíope
+    var renaissanceDamMarker = L.marker([11.21, 35.00]).addTo(map); // Coordenadas aproximadas
+    renaissanceDamMarker.bindPopup("<b>Gran Presa del Renacimiento Etíope</b><br>Una de las mayores fuentes de controversia y cooperación en la cuenca del Nilo.");
+
+
+
+    // Estilo personalizado para la cuenca del Nilo
+    var estiloCuenca = {
+        "color": "#7ec8e3", // Color más celeste para el borde
+        "weight": 2,        // Borde más estrecho
+        "opacity": 0.65     // Hacer el borde semitransparente
+    };
+
+    // Carga y añade los datos de la cuenca del Nilo con estilo personalizado
+    fetch('canopo/cuencaNilo.geojson')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            L.geoJSON(data, {style: estiloCuenca}).addTo(map); // Aplica el estilo definido
+        });
+
+    // Opcionalmente, si deseas aplicar un estilo diferente al curso completo del Nilo
+    var estiloCursoNilo = {
+        "color": "#1A76D2",
+        "weight": 3,
+        "opacity": 0.8
+    };
+
+    fetch('canopo/nileFullSimplified.json')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            L.geoJSON(data, {style: estiloCursoNilo}).addTo(map); // Aplica un estilo diferente al curso completo del Nilo
+        });
+});
+
+        </script>
+        
+    
+</div>
+
+
+</body>
+</html>

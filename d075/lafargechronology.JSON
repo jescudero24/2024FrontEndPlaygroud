@@ -1,0 +1,742 @@
+{
+    "events": [
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1836_BroadwayNewYork.jpg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1836_BroadwayNewYork.jpg",
+          "caption": "<a href='https://digitalcollections.nypl.org/items/5e66b3e8-cf05-d471-e040-e00a180654d7' target='_blank'>Broadway, New-York. Showing each building from the Hygeian Depot corner of Canal Street to beyond Niblo's Garden</a>.",
+          "credit": "The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Print Collection, The New York Public Library. New York Public Library Digital Collections. "
+        },
+        "start_date": {
+          "year": "1835"
+        },
+        "end_date": {
+          "year": "1835"
+        },
+        "text": {
+          "headline": "March 31, 1835",
+          "text": "Born March 31, New York."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1853"
+        },
+        "end_date": {
+          "year": "1853"
+        },
+        "text": {
+          "headline": "1853",
+          "text": "Graduates from Mount Saint Mary’s College, Emmitsburg, MD."
+        }
+      },
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1859_SelfPortrait2.jpg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1859_SelfPortrait2.jpg",
+          "caption": "John La Farge, Portrait of the Painter (1859). Oil on wood panel.",
+          "credit": "Samuel D. Lee Fund, 1934. The Metropolitan Museum of Art, www.metmuseum.org.  "
+        },
+        "start_date": {
+          "year": "1855"
+        },
+        "end_date": {
+          "year": "1855"
+        },
+        "text": {
+          "headline": "1855",
+          "text": "Studies law, and earns Master’s Degree from Mount Saint Mary’s College; paints first known oil painting, a self-portrait."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1856"
+        },
+        "end_date": {
+          "year": "1857"
+        },
+        "text": {
+          "headline": "1856 - 1857",
+          "text": "Wanderjahre in Europe; visits France, Belgium, Denmark, Germany and Switzerland."
+        }
+      },
+      {
+        "media": {
+          "url": "https://cdn.loc.gov/service/pnp/ds/04900/04961v.jpg",
+          "thumbnail": "https://cdn.loc.gov/service/pnp/ds/04900/04961v.jpg",
+          "caption": "Tenth Street Studio Building, 51 West 10th Street between Fifth and Sixth Avenues, New York, New York",
+          "credit": "American Institute of Architects / American Architectural Foundation Collection, Library of Congress Prints and Photographs Division Washington, D.C. https://www.loc.gov/pictures/item/2014645393/. "
+        },
+        "start_date": {
+          "year": "1858"
+        },
+        "end_date": {
+          "year": "1858"
+        },
+        "text": {
+          "headline": "1858",
+          "text": "Rents a studio in the Tenth Street Studio Building, 51 West 10th Street, NY. Practices law and studies painting. The building was designed by Richard Morris Hunt, and other artists who have worked there include Winslow Homer, Frederick Church, William Merritt Chase and Alexander Calder."
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/William_Morris_Hunt_sitting.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/0/0e/William_Morris_Hunt_sitting.jpg",
+          "caption": "William Morris Hunt, 1879.",
+          "credit": "Studio of Edwin N. Peabody."
+        },
+        "start_date": {
+          "year": "1859"
+        },
+        "end_date": {
+          "year": "1859"
+        },
+        "text": {
+          "headline": "1859",
+          "text": "Moves to Newport, RI, to study painting with William Morris Hunt."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1860"
+        },
+        "end_date": {
+          "year": "1860"
+        },
+        "text": {
+          "headline": "October 15, 1860",
+          "text": "Marries Margaret Perry on October 15; she converts to Catholicism."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1860"
+        },
+        "end_date": {
+          "year": "1863"
+        },
+        "text": {
+          "headline": "1860",
+          "text": "Begins large altar piece of St. Paul Preaching at Athens for Rev. Isaac Thomas Hecker, founder of the Paulist Fathers. (finished 1863, but never used)"
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1862"
+        },
+        "start_date": {
+          "year": "1863"
+        },
+        "text": {
+          "headline": "1862",
+          "text": "Paints panels of the Virgin and St. John for a triptych intended for Saint Peter’s Church in New York; project abandoned in 1863."
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/18970403.NYC.Academy_of_Design_at_the_corner_Twenty-Third_St.%26FourthAve.d.RMHunt.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/c0/18970403.NYC.Academy_of_Design_at_the_corner_Twenty-Third_St.%26FourthAve.d.RMHunt.jpg",
+          "caption": "National Academy of Design, New York.",
+          "credit": "Wikimedia.org"
+        },
+        "start_date": {
+          "year": "1863"
+        },
+        "end_date": {
+          "year": "1863"
+        },
+        "text": {
+          "headline": "1863",
+          "text": "Elected an Associate Academician to the National Academy of Design. Academy regulations require inductees to submit self-portraits in order to confirm membership."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1864"
+        },
+        "end_date": {
+          "year": "1864"
+        },
+        "text": {
+          "headline": "1864",
+          "text": "Forced to flee from creditors in Newport; moves to Roxbury, MA."
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/John_LaFarge%2C_Paradise_Valley.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/c8/John_LaFarge%2C_Paradise_Valley.jpg",
+          "caption": "Paradise Valley",
+          "credit": "Wikimedia.org"
+        },
+        "start_date": {
+          "year": "1865"
+        },
+        "end_date": {
+          "year": "1865"
+        },
+        "text": {
+          "headline": "1865",
+          "text": "Returns to Newport, living on Paradise Avenue; the area inspires many landscape paintings."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1865"
+        },
+        "end_date": {
+          "year": "1938"
+        },
+        "text": {
+          "headline": "1865",
+          "text": "Birth of son John Louis Bancel (1865-1938) is born. His son would become a studio assistant in later years."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1867"
+        },
+        "end_date": {
+          "year": "1956"
+        },
+        "text": {
+          "headline": "1867",
+          "text": "Birth of daughter Margaret (1867-1956)."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "La Farge, John. 'Midsummer Eve,' <em>The Riverside magazine for young people</em>. 1870. ark:/13960/t5x63zc5p.",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1867"
+        },
+        "end_date": {
+          "year": "1867"
+        },
+        "text": {
+          "headline": "1867",
+          "text": "Receives and begins a commission to complete a series of illustrated scenes for <a href='https://archive.org/stream/riversidemagazi00scudgoog#page/n423/mode/2up' target='_blank'>The Riverside Magazine for Young People</a>."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1868"
+        },
+        "end_date": {
+          "year": "1868"
+        },
+        "text": {
+          "headline": "1868",
+          "text": "Elected to the American Society of Painters in Water Colors."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1869"
+        },
+        "end_date": {
+          "year": "1869"
+        },
+        "text": {
+          "headline": "1869",
+          "text": "Elected full member of the National Academy of Design; also serves on the Provisional Committee which worked to establish the Metropolitan Museum of Art."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1873"
+        },
+        "end_date": {
+          "year": "1873"
+        },
+        "text": {
+          "headline": "1873",
+          "text": "Travels to Europe, meeting with Pre-Raphaelites in England, and French artists in Paris."
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Sanders_theater_2009y.JPG",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/11/Sanders_theater_2009y.JPG",
+          "caption": "Memorial Hall, Harvard University, Cambridge, MA.",
+          "credit": "Wikimedia.org"
+        },
+        "start_date": {
+          "year": "1874"
+        },
+        "end_date": {
+          "year": "1874"
+        },
+        "text": {
+          "headline": "1874",
+          "text": "Returns from Europe, begins designs for stained glass windows for <a href='https://library.bc.edu/lafargeglass/items/show/96' target='_blank'>Memorial Hall, Harvard</a>."
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Trinity_Church%2C_Boston%2C_Massachusetts_-_front_oblique_view.JPG",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Trinity_Church%2C_Boston%2C_Massachusetts_-_front_oblique_view.JPG",
+          "caption": "Trinity Church, Boston, MA.",
+          "credit": "Wikimedia.org"
+        },
+        "start_date": {
+          "year": "1876"
+        },
+        "end_date": {
+          "year": "1877"
+        },
+        "text": {
+          "headline": "1876 - 1877",
+          "text": "Murals and painted decoration for <a href='https://library.bc.edu/lafargeglass/items/show/108' target='_blank'>Trinity Church</a>, Boston. Finished in early 1877."
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/The_Trocadero%2C_Exposition_Universal%2C_1900%2C_Paris%2C_France.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/7/70/The_Trocadero%2C_Exposition_Universal%2C_1900%2C_Paris%2C_France.jpg",
+          "caption": "Trocadero, Exposition Universelle, Paris, France.",
+          "credit": "Wikimedia.org"
+        },
+        "start_date": {
+          "year": "1878"
+        },
+        "end_date": {
+          "year": "1878"
+        },
+        "text": {
+          "headline": "1878",
+          "text": "Exhibits at the Universal Exhibition in Paris."
+        }
+      },
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1880_LaFargePatent.jpg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1880_LaFargePatent.jpg",
+          "caption": "No. 224,831",
+          "credit": "United States Patent and Trademark Office"
+        },
+        "start_date": {
+          "year": "1880"
+        },
+        "end_date": {
+          "year": "1880"
+        },
+        "text": {
+          "headline": "1880",
+          "text": "Patents his <a href='https://1.usa.gov/1TMG6Dr' target='_blank'>use of opalescent glass</a>."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1880"
+        },
+        "end_date": {
+          "year": "1963"
+        },
+        "text": {
+          "headline": "1880",
+          "text": "Birth of his son John (1880-1963), later a <a href='https://www.ignatianspirituality.com/ignatian-voices/20th-century-ignatian-voices/john-lafarge-sj' target='_blank'>prominent Jesuit theologian</a>."
+        }
+      },
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1881_BattleWindowMemHallHarvard.jpg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1881_BattleWindowMemHallHarvard.jpg",
+          "caption": "",
+          "credit": "Battle Window, Memorial Hall, Harvard University, Cambridge, MA."
+        },
+        "start_date": {
+          "year": "1882"
+        },
+        "end_date": {
+          "year": "1882"
+        },
+        "text": {
+          "headline": "1882",
+          "text": "Replaces the Battle Window in <a href='https://library.bc.edu/lafargeglass/items/show/131' target='_blank'>Memorial Hall, Harvard University</a> (originally installed in 1879) with a revised version done in his new technique of opalescent glass at his own expense."
+        }
+      },
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1883_LaFargePatent.jpg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1883_LaFargePatent.jpg",
+          "caption": "No. 274,948",
+          "credit": "United States Patent and Trademark Office"
+        },
+        "start_date": {
+          "year": "1883"
+        },
+        "end_date": {
+          "year": "1883"
+        },
+        "text": {
+          "headline": "1883",
+          "text": "Patents a <a href='https://1.usa.gov/1MDLDYU' target='_blank'>method</a> of constructing and applying framework to secure glass segments."
+        }
+      },
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1883_Christ_in_MajestyTrinityChurch.jpg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1883_Christ_in_MajestyTrinityChurch.jpg",
+          "caption": "Christ in Majesty, Trinity Church, Boston, MA.",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1883"
+        },
+        "end_date": {
+          "year": "1883"
+        },
+        "text": {
+          "headline": "1883",
+          "text": "Installs the <a href='https://library.bc.edu/lafargeglass/items/show/139' target='_blank'>Christ in Majesty</a> window in <a href='https://library.bc.edu/lafargeglass/items/show/108' target='_blank'>Trinity Church</a>, Boston."
+        }
+      },
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1884_StPaul_StPaulsEpiscChurchStockbridge.jpg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1884_StPaul_StPaulsEpiscChurchStockbridge.jpg",
+          "caption": "Saint Paul Preaching at Athens, Saint Paul's Episcopal Church, Stockbridge, MA.",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1884"
+        },
+        "end_date": {
+          "year": "1884"
+        },
+        "text": {
+          "headline": "1884",
+          "text": "Completes <a href='https://library.bc.edu/lafargeglass/items/show/136' target='_blank'>Saint Paul Preaching at Athens</a> window for <a href='https://library.bc.edu/lafargeglass/items/show/101' target='_blank'>Saint Paul’s Episcopal Church</a>, Stockbridge, Massachusetts. Receives commission for a decorative project at the <a href='https://library.bc.edu/lafargeglass/items/show/82' target='_blank'> Church of Saint Paul the Apostle</a> in New York."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1885"
+        },
+        "end_date": {
+          "year": "1885"
+        },
+        "text": {
+          "headline": "1885",
+          "text": "Dissolves the La Farge Decorative Art Company after legal and financial disputes; La Farge is arrested in New York in April for taking designs with him."
+        }
+      },
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1887_Buddha.jpg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1887_Buddha.jpg",
+          "caption": "John La Farge, The Great Statue of Amida Buddha at Kamakura, Known as the Daibutsu, from the Priest's Garden (1887). Watercolor and gouache. ",
+          "credit": "Gift of the family of Maria L. Hoyt, 1966. The Metropolitan Museum of Art, www.metmuseum.org."
+        },
+        "start_date": {
+          "year": "1886"
+        },
+        "end_date": {
+          "year": "1886"
+        },
+        "text": {
+          "headline": "1886",
+          "text": "Travels with Henry Adams to Japan."
+        }
+      },
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1887_AngelofHelpUnityChurchNEaston.jpg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1887_AngelofHelpUnityChurchNEaston.jpg",
+          "caption": "Angel of Help, Unity Church, North Easton, MA.",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1887"
+        },
+        "end_date": {
+          "year": "1887"
+        },
+        "text": {
+          "headline": "1887",
+          "text": "Completes <a href='https://library.bc.edu/lafargeglass/items/show/144' target='_blank' >The Angel of Help, the Helen Angier Ames Memorial Window </a> for <a href='https://library.bc.edu/lafargeglass/items/show/110' target='_blank'>Unity Church</a>, North Easton; also finishes three large windows for the Caldwell house in Newport (these are now in a chapel at Salve Regina University)."
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Trinity_Episcopal_Church_Buffalo_NY_Dec_09.JPG",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Trinity_Episcopal_Church_Buffalo_NY_Dec_09.JPG",
+          "caption": "Trinity Episcopal Church, Buffalo, New York.",
+          "credit": "Wikimedia.org"
+        },
+        "start_date": {
+          "year": "1889"
+        },
+        "end_date": {
+          "year": "1889"
+        },
+        "text": {
+          "headline": "1889",
+          "text": "Wins a first class medal and a French Legion of Honor citation at the Paris Universal Exposition for his <a href='https://library.bc.edu/lafargeglass/items/show/176' target='_blank'>The Sealing of the Twelve Tribes</a>, 'Watson' Window for <a href='https://library.bc.edu/lafargeglass/items/show/107' target='_blank'>Trinity Church</a>, Buffalo, one of a large number of windows for that church. Creates the three windows now at BC for the church in Roxbury, MA."
+        }
+      },
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1891_GirlsSamoa.jpg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1891_GirlsSamoa.jpg",
+          "caption": "",
+          "credit": "Purchase, Mrs. Arthur Hays Sulzberger Gift, in memory of Mr. Arthur Hays Sulzberger, 1970. The Metropolitan Museum of Art, www.metmuseum.org."
+        },
+        "start_date": {
+          "year": "1890"
+        },
+        "end_date": {
+          "year": "1891"
+        },
+        "text": {
+          "headline": "1890",
+          "text": "Travels with Henry Adams to Samoa and the South Seas. First one man exhibition/sale held at Doll and Richards, Boston."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1893"
+        },
+        "end_date": {
+          "year": "1893"
+        },
+        "text": {
+          "headline": "1893",
+          "text": "Appointed lecturer in art at the Metropolitan Museum in New York."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1895"
+        },
+        "end_date": {
+          "year": "1895"
+        },
+        "text": {
+          "headline": "1895",
+          "text": "Exhibits oil paintings and watercolors in his Records of Travel exhibit in Boston, New York and Paris. Publishes <a href='https://archive.org/details/considerationson007608mbp' target='_blank'>Considerations on Painting</a>, based on his 1893 lectures at the Metropolitan Museum."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1896"
+        },
+        "end_date": {
+          "year": "1896"
+        },
+        "text": {
+          "headline": "1896",
+          "text": "First biography, entitled <a href='https://archive.org/details/johnlafargearti00waergoog' target='_blank'>John La Farge: Artist and Writer</a>, completed by Cecilia Waern."
+        }
+      },
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1913_ChartresCath.jpeg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1913_ChartresCath.jpeg",
+          "caption": "Chartres [la cathédrale et la place Chatelet]. Agence Rol. 1913.",
+          "credit": "Bibliothèque nationale de France, département Estampes et photographie, EST EI-13 (320), http://gallica.bnf.fr/ark:/12148/btv1b6927996k."
+        },
+        "start_date": {
+          "year": "1899"
+        },
+        "end_date": {
+          "year": "1899"
+        },
+        "text": {
+          "headline": "1899",
+          "text": "Travels to France with Henry Adams; they visit Chartres Cathedral."
+        }
+      },
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1905_JohnHarvardWindowSouthwark.jpg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1905_JohnHarvardWindowSouthwark.jpg",
+          "caption": "John Harvard Memorial Window, Southwark Cathedral, London, England.",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1905"
+        },
+        "end_date": {
+          "year": "1905"
+        },
+        "text": {
+          "headline": "1905",
+          "text": "Completes <a href='https://library.bc.edu/lafargeglass/items/show/204' target='_blank'>John Harvard Memorial</a> windows for <a href='https://library.bc.edu/lafargeglass/items/show/102' target='_blank'>Southwark Cathedral</a>, London."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1905"
+        },
+        "end_date": {
+          "year": "1905"
+        },
+        "text": {
+          "headline": "July 26, 1905",
+          "text": "John La Farge Jr. is ordained to the priesthood in Innsbruck on July 26, 1905, the following November he entered the novitiate of the New York-Maryland Province of the Society of Jesus at St. Andrew-on-Hudson, Poughkeepsie, New York."
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/2014_Columbia_University_St._Paul%27s_Chapel.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/5/5a/2014_Columbia_University_St._Paul%27s_Chapel.jpg",
+          "caption": "St. Paul's Chapel, Columbia University, New York. ",
+          "credit": "Wikimedia.org"
+        },
+        "start_date": {
+          "year": "1906"
+        },
+        "end_date": {
+          "year": "1906"
+        },
+        "text": {
+          "headline": "1906",
+          "text": "<a href='https://library.bc.edu/lafargeglass/items/show/174' target='_blank'>Saint Paul Preaching in Athens</a> windows installed at <a href='https://library.bc.edu/lafargeglass/items/show/105' target='_blank'>St. Paul's Chapel</a>, Columbia University."
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "thumbnail": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1910"
+        },
+        "end_date": {
+          "year": "1910"
+        },
+        "text": {
+          "headline": "1910",
+          "text": "Suffers nervous collapse in April, dies in Providence, RI."
+        }
+      },
+      {
+        "media": {
+          "url": "https://library.bc.edu/lafargeglass/files/timeline/1908_LaFargeBust.jpg",
+          "thumbnail": "https://library.bc.edu/lafargeglass/files/timeline/1908_LaFargeBust.jpg",
+          "caption": "Edith Woodman Burroughs, John La Farge bust (1908). Bronze. ",
+          "credit": "Rogers Fund, 1910. The Metropolitan Museum of Art, www.metmuseum.org"
+        },
+        "start_date": {
+          "year": "1911"
+        },
+        "end_date": {
+          "year": "1911"
+        },
+        "text": {
+          "headline": "1911",
+          "text": "Major retrospective exhibition of La Farge at the Boston Museum of Fine Arts. Chief biographer Royal Cortissoz publishes <a href='https://archive.org/details/johnlafargememoi00cortrich' target='_blank'>John La Farge: A Memoir and a Study</a>."
+        }
+      }
+    ]
+}
