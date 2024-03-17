@@ -1,0 +1,252 @@
+/* Estilo base para el lightbox, oculto por defecto */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Solo muestra el lightbox cuando su ID es targeteado */
+.lightbox:target {
+  display: flex;
+}
+
+.lightbox-content {
+  position: relative;
+  padding: 10px;
+  box-shadow: 0 0 10px #000;
+  background: #fff;
+}
+
+.lightbox-content-img-wkp-ytb {
+  display: flex; /* Activa Flexbox */
+  flex-direction: column; /* Organiza los hijos en una columna */
+  height: 80%; /* O el porcentaje/altura deseada */
+  width: 80%; /* Mantiene tu ancho original */
+  box-shadow: 0 0 10px #000;
+  background: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #ccc;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* Estilo para las imágenes dentro del lightbox */
+.lightbox img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.plusWiki {
+  padding: 1%;
+  background-color: #ccc;
+  width: auto;
+  height: auto;
+  border: none;
+}
+
+.plusWikiContent {
+  padding: 10px;
+  min-height: 400px;
+  border: none;
+  flex: 1; /* Le dice al iframe que crezca y llene el espacio disponible */
+  width: auto; /* Ocupa el 100% del ancho de su contenedor */
+  border: none;
+  padding: 10px; /* Mantiene tu padding */
+}
+
+.plusIMGContent {
+  padding: 10px;
+  box-sizing: border-box; /* Incluye el padding en el cálculo del ancho y altura */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra la imagen y el figcaption dentro de figure */
+  overflow: hidden; /* Previene el desbordamiento del contenido */
+  max-height: 80vh; /* Limita la altura del contenedor a una porción de la altura de la ventana */
+  width: auto; /* Permite que el contenedor ajuste su ancho */
+}
+
+.plusIMGContent img {
+  max-width: 100%; /* Limita el ancho de la imagen al 100% de su contenedor */
+  max-height: 98%; /* Asegura que la imagen no exceda la altura del contenedor, quito el 100% para que se vea el texto de la imagen */
+  object-fit: contain; /* Asegura que la imagen se escale correctamente dentro de estos límites */
+}
+
+.fotosPlusAudio {
+  border: 1px solid red;
+  padding: 5px;
+  max-width: 550px;
+}
+.gallery {
+  padding: 5px;
+  display: flex; /* Activa Flexbox para este contenedor */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+}
+
+.icons-right {
+  margin-left: auto; /* Empuja los elementos con esta clase hacia la derecha */
+}
+
+audio {
+  padding: 5px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/*Estilo de los botones*/
+
+.plusWiki ul {
+  list-style: none; /* Elimina los marcadores de lista */
+  padding: 0; /* Elimina el padding predeterminado */
+  margin: 0; /* Elimina el margen predeterminado */
+}
+
+.plusWiki li {
+  margin-bottom: 10px; /* Añade un poco de espacio entre los botones */
+  display: inline-block;
+}
+
+.plusWiki li a {
+  display: inline-block; /* Hace que el enlace ocupe todo el espacio del li */
+  padding: 10px 20px; /* Añade padding para hacer el botón más grande */
+  background-color: #555; /* Color de fondo gris */
+  color: white; /* Texto en color blanco */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  border-radius: 5px; /* Bordes redondeados */
+  text-align: center; /* Alinea el texto al centro */
+  transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+.plusWiki li a:hover {
+  background-color: #777; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.timeline {
+  font-size: 2.5em;
+  background-color: #ccc;
+  padding: 1em;
+  max-width: 500px;
+}
+
+/* Iconos con los numeros*/
+
+.uno-svg {
+  width: 46px; /* Ancho del ícono */
+  height: 46px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url('data:image/svg+xml;utf8,<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="black" /><text x="18" y="34" font-family="Arial" font-size="24" fill="white">1</text></svg>');
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
+
+.dos-svg {
+  width: 46px; /* Ancho del ícono */
+  height: 46px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url('data:image/svg+xml;utf8,<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="black" /><text x="18" y="34" font-family="Arial" font-size="24" fill="white">2</text></svg>');
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
+
+.tres-svg {
+  width: 46px; /* Ancho del ícono */
+  height: 46px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url('data:image/svg+xml;utf8,<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="black" /><text x="18" y="34" font-family="Arial" font-size="24" fill="white">3</text></svg>');
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
+
+.cuatro-svg {
+  width: 46px; /* Ancho del ícono */
+  height: 46px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url('data:image/svg+xml;utf8,<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="black" /><text x="18" y="34" font-family="Arial" font-size="24" fill="white">4</text></svg>');
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
+
+.cinco-svg {
+  width: 46px; /* Ancho del ícono */
+  height: 46px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url('data:image/svg+xml;utf8,<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="black" /><text x="18" y="34" font-family="Arial" font-size="24" fill="white">5</text></svg>');
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
+
+.seis-svg {
+  width: 46px; /* Ancho del ícono */
+  height: 46px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url('data:image/svg+xml;utf8,<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="black" /><text x="18" y="34" font-family="Arial" font-size="24" fill="white">6</text></svg>');
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
+
+.siete-svg {
+  width: 46px; /* Ancho del ícono */
+  height: 46px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url('data:image/svg+xml;utf8,<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="black" /><text x="18" y="34" font-family="Arial" font-size="24" fill="white">7</text></svg>');
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
+
+.ocho-svg {
+  width: 46px; /* Ancho del ícono */
+  height: 46px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url('data:image/svg+xml;utf8,<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="black" /><text x="18" y="34" font-family="Arial" font-size="24" fill="white">8</text></svg>');
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
+
+.nueve-svg {
+  width: 46px; /* Ancho del ícono */
+  height: 46px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url('data:image/svg+xml;utf8,<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="black" /><text x="18" y="34" font-family="Arial" font-size="24" fill="white">9</text></svg>');
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
+
+.cero-svg {
+  width: 46px; /* Ancho del ícono */
+  height: 46px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url('data:image/svg+xml;utf8,<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="black" /><text x="18" y="34" font-family="Arial" font-size="24" fill="white">0</text></svg>');
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
+
+.IMG-svg {
+  width: 42px; /* Ancho del ícono */
+  height: 42px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url("data:image/svg+xml,%3Csvg width=%2280%22 height=%2280%22 viewBox=%220 0 24 24%22 fill=%22none%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Crect width=%2224%22 height=%2224%22 fill=%22white%22/%3E%3Cpath d=%22M21 16V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V18M21 16V4C21 3.44772 20.5523 3 20 3H4C3.44772 3 3 3.44772 3 4V18M21 16L15.4829 12.3219C15.1843 12.1228 14.8019 12.099 14.4809 12.2595L3 18%22 stroke=%22%23000000%22 stroke-linejoin=%22round%22/%3E%3Ccircle cx=%228%22 cy=%229%22 r=%222%22 stroke=%22%23000000%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E");
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
+
+.WKP-svg {
+  width: 42px; /* Ancho del ícono */
+  height: 42px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url("data:image/svg+xml;utf8,<svg fill=%22000000%22 version=%221.1%22 id=%22Capa_1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%22800px%22 height=%22800px%22 viewBox=%220 0 98.05 98.05%22 xml:space=%22preserve%22><g><path d=%22M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z%22/></g></svg>");
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
+
+.YTB-svg {
+  width: 42px; /* Ancho del ícono */
+  height: 42px; /* Alto del ícono */
+  display: inline-block; /* O cualquier otro display que prefieras */
+  background-image: url("data:image/svg+xml,<svg width=%22800px%22 height=%22800px%22 viewBox=%220 0 24 24%22 fill=%22none%22 xmlns=%22http://www.w3.org/2000/svg%22><path fill-rule=%22evenodd%22 clip-rule=%22evenodd%22 d=%22M9.49614 7.13176C9.18664 6.9549 8.80639 6.95617 8.49807 7.13509C8.18976 7.31401 8 7.64353 8 8V16C8 16.3565 8.18976 16.686 8.49807 16.8649C8.80639 17.0438 9.18664 17.0451 9.49614 16.8682L16.4961 12.8682C16.8077 12.6902 17 12.3589 17 12C17 11.6411 16.8077 11.3098 16.4961 11.1318L9.49614 7.13176ZM13.9844 12L10 14.2768V9.72318L13.9844 12Z%22 fill=%22%230F0F0F%22/><path fill-rule=%22evenodd%22 clip-rule=%22evenodd%22 d=%22M0 12C0 8.25027 0 6.3754 0.954915 5.06107C1.26331 4.6366 1.6366 4.26331 2.06107 3.95491C3.3754 3 5.25027 3 9 3H15C18.7497 3 20.6246 3 21.9389 3.95491C22.3634 4.26331 22.7367 4.6366 23.0451 5.06107C24 6.3754 24 8.25027 24 12C24 15.7497 24 17.6246 23.0451 18.9389C22.7367 19.3634 22.3634 19.7367 21.9389 20.0451C20.6246 21 18.7497 21 15 21H9C5.25027 21 3.3754 21 2.06107 20.0451C1.6366 19.7367 1.26331 19.3634 0.954915 18.9389C0 17.6246 0 15.7497 0 12ZM9 5H15C16.9194 5 18.1983 5.00275 19.1673 5.10773C20.0989 5.20866 20.504 5.38448 20.7634 5.57295C21.018 5.75799 21.242 5.98196 21.4271 6.23664C21.6155 6.49605 21.7913 6.90113 21.8923 7.83269C21.9973 8.80167 22 10.0806 22 12C22 13.9194 21.9973 15.1983 21.8923 16.1673C21.7913 17.0989 21.6155 17.504 21.4271 17.7634C21.242 18.018 21.018 18.242 20.7634 18.4271C20.504 18.6155 20.0989 18.7913 19.1673 18.8923C18.1983 18.9973 16.9194 19 15 19H9C7.08058 19 5.80167 18.9973 4.83269 18.8923C3.90113 18.7913 3.49605 18.6155 3.23664 18.4271C2.98196 18.242 2.75799 18.018 2.57295 17.7634C2.38448 17.504 2.20866 17.0989 2.10773 16.1673C2.00275 15.1983 2 13.9194 2 12C2 10.0806 2.00275 8.80167 2.10773 7.83269C2.20866 6.90113 2.38448 6.49605 2.57295 6.23664C2.75799 5.98196 2.98196 5.75799 3.23664 5.57295C3.49605 5.38448 3.90113 5.20866 4.83269 5.10773C5.80167 5.00275 7.08058 5 9 5Z%22 fill=%22%230F0F0F%22/></svg>");
+  background-size: cover; /* Asegura que el SVG cubra el div completamente */
+}
