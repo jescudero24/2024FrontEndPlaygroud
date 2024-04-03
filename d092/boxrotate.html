@@ -1,0 +1,82 @@
+<style>
+    .body {
+  background: #F5F3F4;
+  margin: 0;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+
+
+.card {
+  display: inline-block;
+  margin: 10px;
+  background: #fff;
+  padding: 15px;
+  min-width: 200px;
+  box-shadow: 0 3px 5px #ddd;
+  color: #555;
+}
+.card .box {
+  width: 150px;
+  height: 100px;
+  margin: auto;
+  background: #ddd;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ccc inset;
+}
+.card .box .fill {
+  width: 150px;
+  height: 100px;
+  position: relative;
+  background: #03A9F4;
+  opacity: 0.5;
+  box-shadow: 0 0 5px #ccc;
+  transition: 0.3s;
+}
+.card p {
+  margin: 25px 0 0;
+}
+
+.box-rotate {
+  animation: box-rotate 5s infinite;
+}
+
+@keyframes box-rotate {
+  50% {
+    transform: rotate(80deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
+
+<div class="body">
+<div class="card">
+    <div class="box">
+      <div class="fill" data-animation-name="box-rotate"></div>
+    </div>
+    <p>rotate</p>
+  </div>
+</div>
+
+  <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Selecciona todos los elementos con la clase 'fill'
+  var fills = document.querySelectorAll('.fill');
+
+  // Itera sobre cada elemento y agrega un controlador de eventos de clic
+  fills.forEach(function(fill) {
+    fill.addEventListener('click', function() {
+      // Obtiene el valor del atributo 'data-animation-name'
+      var elemData = this.getAttribute('data-animation-name');
+      // Alterna la clase obtenida en el elemento
+      this.classList.toggle(elemData);
+    });
+  });
+});
+
+  </script>
