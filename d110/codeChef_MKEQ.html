@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codewars - Disemvowel Trolls</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .explain {
+        display: block;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        background: #eee;
+      }
+
+      #inputText,
+      #outputText {
+        display: block;
+        border: 1px solid #444;
+        width: 90vw;
+        height: 3em;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: lightblue;
+        font-family: "Courier New", Courier, monospace;
+      }
+      #outputText {
+        font-size: 1.2em;
+      }
+      button {
+        padding: 10px;
+        margin: 10px;
+        background-color: darkblue;
+        color: #09f;
+        border-radius: 10px;
+      }
+      .kata {
+        width: 100%;
+        padding: 10px;
+      }
+      textarea {
+        min-height: 3em;
+        form-sizing: content; 
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/monokai.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <section class="kata">
+      <h1>CodeChef - Make Equal</h1>
+      <p>
+        problem::
+        <a href="https://www.codechef.com/START130C/problems/MKEQ">MKEQ</a>
+      <br>
+
+        testing case:
+      <pre>
+3
+1
+1
+4
+1 3 2 1
+7
+2 4 5 1 4 5 3
+        </pre>
+      </p>
+
+      <pre>
+<code class="language-js">
+  const readline = require('readline')
+
+  const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+  })
+  const lines = []
+  rl.on('line', (input) => {
+      lines.push(input);
+  })
+  rl.on('close', () => {
+      let l = 0;
+      let t = +lines[l++]
+      const output = []
+      for (let i = 0; i < t; i++) {
+          const n = +lines[l++]
+          const arr = lines[l++].trim().split(' ').map(Number)
+          output[i] = solve(n, arr) ? 'YES' : 'NO'
+      }
+      console.log(output.join('\n'))
+  })
+  
+  function solve(n, arr) {
+      if (arr[0] !== arr[n - 1]) return false
+      for (let i = 0; i < n; i++) {
+          if (arr[i] < arr[0]) return false
+      }
+      return true
+  }
+</code>
+</pre>
+
+      <!-- Input para introducir el texto -->
+      <textarea id="inputText" placeholder="Input"></textarea>
+
+      <!-- Botón que ejecuta la función -->
+      <button onclick="procesarInputText()">Procesar</button>
+
+
+      <!-- Espacio donde se muestra el resultado -->
+      <div id="outputText">Output</div>
+
+      <!-- Script que incluye la función y la lógica para manejar el evento del botón -->
+      <script>
+function procesarInputText() {
+    const inputText = document.getElementById("inputText").value;
+    const lines = inputText.split('\n');
+    let l = 0;
+    let t = parseInt(lines[l++], 10);
+    const output = [];
+    
+    for (let i = 0; i < t; i++) {
+        const n = parseInt(lines[l++], 10);
+        const arr = lines[l++].trim().split(' ').map(Number);
+        output[i] = solve(n, arr) ? 'YES' : 'NO';
+    }
+    
+    document.getElementById("outputText").innerText = output.join('\n');
+}
+
+function solve(n, arr) {
+    if (arr[0] !== arr[n - 1]) return false;
+    for (let i = 0; i < n; i++) {
+        if (arr[i] < arr[0]) return false;
+    }
+    return true;
+}
+
+      </script>
+
+      <script>
+        hljs.highlightAll();
+      </script>
+    </section>
+
+    <section class="explain">
+      <ul>
+        <strong>Referencias y documentación</strong>
+        <li>
+          <strong>keywords::</strong> Strings, Regular Expresions, Fundamentals
+        </li>
+        <li><strong>Manz::</strong> JS Cheatsheet</li>
+        <li>
+          <strong>MDN::</strong>
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+        </li>
+        <li>
+          <strong>MDN::</strong>
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions
+        </li>
+      </ul>
+      <ul>
+        <strong>Herramientas</strong>
+        <li><b>codi.link::</b> https://codi.link/||</li>
+        <li>
+          <b>nodeJS::</b>
+          https://medium.com/@neiroalejandromendezabreu/como-subir-hacer-un-ejercicio-con-nodejs-en-codechef-d635aba5973d
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
