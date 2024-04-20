@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeetCode - Two Numbers</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .explain {
+        display: block;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        background: #eee;
+      }
+
+      #inputText,
+      #outputText {
+        display: block;
+        border: 1px solid #444;
+        width: 90vw;
+        height: 3em;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: lightblue;
+        font-family: "Courier New", Courier, monospace;
+      }
+      #outputText {
+        font-size: 1.2em;
+      }
+      button {
+        padding: 10px;
+        margin: 10px;
+        background-color: darkblue;
+        color: #09f;
+        border-radius: 10px;
+      }
+      .kata {
+        width: 100%;
+        padding: 10px;
+      }
+      textarea {
+        min-height: 3em;
+        /*form-sizing: content;*/ 
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/monokai.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+
+  </head>
+  <body>
+    <section class="kata">
+      <h1>LeetCode - Two Numbers</h1>
+      <p>
+        problem::
+        <a href="https://leetcode.com/problems/two-sum/description/">Two Sum</a><br>
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
+      <br>
+
+        testing case:
+      <pre>
+        Input: nums = [2,7,11,15], 9 --> Output: [0,1]
+        Input: nums = [3,2,4], 6 --> Output: [1,2]
+        Input: nums = [3,3], 6 --> Output: [0,1]
+        </pre>
+      </p>
+
+<pre>
+    <code class="language-js">
+/**
+* @param {number[]} nums
+* @param {number} target
+* @return {number[]}
+*/
+var twoSum = function(nums, target) {
+        const hashMap = {};
+            for (let i = 0; i < nums.length; i++) {
+                const num = nums[i];
+                const complement = target - num;
+                if (hashMap[complement] !== undefined) {
+                    return [hashMap[complement], i];
+                }
+                hashMap[num] = i;
+            }
+            return null;
+};
+
+    </code>
+</pre>
+
+<div class="playground">
+    <!-- Input para introducir el texto -->
+    <textarea id="inputText" placeholder="Input"></textarea>
+
+    <!-- Botón que ejecuta la función -->
+    <button id="processButton">Procesar</button>
+
+    <!-- Espacio donde se muestra el resultado -->
+    <div id="outputText">Output</div>
+
+    <!-- Script que incluye la función y la lógica para manejar el evento del botón -->
+    <script>
+        // Definimos la función twoSum aquí para ser usada dentro de procesarInputText
+        var twoSum = function(nums, target) {
+            const hashMap = {};
+            for (let i = 0; i < nums.length; i++) {
+                const num = nums[i];
+                const complement = target - num;
+                if (hashMap[complement] !== undefined) {
+                    return [hashMap[complement], i];
+                }
+                hashMap[num] = i;
+            }
+            return null;
+        };
+
+        function procesarInputText() {
+            // Obtener el valor del textarea
+            var input = document.getElementById("inputText").value;
+            // Extraer los números y el target del input
+            // Asumimos que el input es de la forma "[num1, num2, ...], target"
+            var parts = input.split('],');
+            var nums = JSON.parse(parts[0] + ']');
+            var target = parseInt(parts[1].trim());
+
+            // Ejecutar twoSum
+            var result = twoSum(nums, target);
+
+            // Mostrar el resultado
+            document.getElementById("outputText").innerHTML = result ? 'Indices: ' + result.join(', ') : 'No se encontraron dos números que sumen al target.';
+        }
+
+        // Añadir un event listener al botón
+        document.getElementById("processButton").addEventListener("click", procesarInputText);
+    </script>
+</div>
+
+
+    </section>
+
+    <section class="explain">
+      <ul>
+        <strong>Referencias y documentación</strong>
+        <li>
+          <strong>keywords::</strong> Number, Arrays
+        </li>
+        <li><strong>Manz::</strong>https://lenguajejs.com/javascript/arrays/que-es/</li>
+        <li>
+          <strong>MDN::</strong>
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort</li>
+        <li>
+          <strong>MDN::</strong>
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted</li>
+          <li><strong>YTB::</strong>https://youtu.be/MlgFhWvxuJk (HashMap)</li>
+      </ul>
+      <ul>
+        <strong>Herramientas</strong>
+        <li><b>codi.link::</b> https://codi.link/||</li>
+        <li>
+          <b>numerosPrimos::</b>
+          https://math-center.ams3.cdn.digitaloceanspaces.com/worksheets/es-decimal-comma/numbers/prime-numbers/first-1000-prime-numbers.pdf        </li>
+      </ul>
+      <img src="../000/Manz_JS_array.jpg">
+
+      <div class="videoYTB">
+        <h2>Así puedes mejorar tu lógica de programación</h2>
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/hulbbKgctSM" title="Así Puedes Mejorar Tu Lógica de Programación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <ul> Básicos
+            <li>Coge Papel y Boli</li>
+            <li>Entiende el Código (Aprende de los grandes)</li>
+            <li>Aprender Lógica (Matemática, Filosofía)</li>
+        </ul>
+        <ul> Bonus
+            <li>Practica (codigo, katas)</li>
+            <li>Entiende el Tiempo</li>
+            <li>Aprender Estructuras de Datos, Algoritmia,...</li>
+            <li>Divide el problema</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div id="markdownContent" style="display:none;">
+
+## HashMaps en JS
+
+Un **HashMap**, conocido en JavaScript como un objeto o un `Map`, es una estructura de datos que asocia claves con valores. Funciona bajo el principio de una tabla hash, donde cada clave tiene asignada una posición en la tabla a través de una función hash. Esto permite almacenamientos y recuperaciones de datos en tiempo constante, es decir, \(O(1)\), en el promedio de los casos.
+
+### Funcionamiento de un HashMap
+
+Un HashMap utiliza una **función hash** para calcular un índice a partir de la clave, donde se almacena el valor en la tabla. El principal beneficio de un HashMap es su eficiencia en las operaciones de búsqueda, inserción y eliminación de elementos, que generalmente se realizan en tiempo constante:
+
+- **Inserción**: Agregar un nuevo par clave-valor se realiza calculando el índice usando la función hash y almacenando el valor en ese índice.
+- **Búsqueda**: Para encontrar un valor, se usa la misma función hash sobre la clave para encontrar el índice y recuperar el valor directamente.
+- **Eliminación**: Similar a la búsqueda, se calcula el índice para localizar el elemento rápidamente y eliminarlo.
+
+### Cómo un HashMap Reduce la Complejidad del Problema
+
+En el problema de encontrar dos números en un array cuya suma sea igual a un valor dado, la utilización de un HashMap reduce la complejidad de tiempo de \(O(n^2)\) a \(O(n)\):
+
+- **Sin HashMap (Fuerza Bruta)**: Sin un HashMap, tendrías que usar dos bucles anidados para comparar cada par de elementos en el array, lo que resulta en una complejidad temporal de \(O(n^2)\) debido a que cada elemento se compara con todos los demás.
+  
+- **Con HashMap**:
+  - **Almacenamiento Previo**: Al iterar sobre el array, por cada elemento, calculas su "complemento" (el número que necesitas para alcanzar el valor objetivo cuando se suma al elemento actual). 
+  - **Verificación**: Verificas si este complemento ya existe en el HashMap. Si está, significa que previamente has procesado otro número que, sumado al actual, da el valor deseado. Dado que cada operación de inserción y verificación en el HashMap es aproximadamente \(O(1)\), el proceso entero de iterar sobre el array y verificar cada complemento se hace en \(O(n)\).
+
+### Ejemplo
+
+Por ejemplo, para el array `[3, 4, 8, 5]` y un objetivo de `13`:
+
+- Iteras sobre cada número:
+  - Para `3`, calculas el complemento `10`. No está en el HashMap, por lo que insertas `{3: índice_de_3}` en el HashMap.
+  - Para `4`, calculas el complemento `9`. No está, por lo que insertas `{4: índice_de_4}`.
+  - Para `8`, calculas el complemento `5`. No está aún, por lo que insertas `{8: índice_de_8}`.
+  - Para `5`, calculas el complemento `8`. ¡Está presente! Así que encontraste tu par que suma `13` sin necesidad de compararlo con todos los demás números.
+
+Usar un HashMap de esta manera transforma un problema de búsqueda de pares potencialmente lento en uno mucho más rápido y eficiente, especialmente para grandes conjuntos de datos.
+      </div>
+
+      <div id="markdownHtmlOutput">
+        <!-- El HTML convertido se mostrará aquí -->
+     </div>
+     
+     <script>
+        window.onload = function() {
+          // Crear una instancia del convertidor de Showdown
+          var converter = new showdown.Converter();
+      
+          // Obtener el texto Markdown del div
+          var markdownText = document.getElementById('markdownContent').innerText;
+      
+          // Convertir Markdown a HTML
+          var html = converter.makeHtml(markdownText);
+      
+          // Mostrar el HTML en otro div
+          document.getElementById('markdownHtmlOutput').innerHTML = html;
+        };
+      </script>
+      
+      <pre>
+      <code class="language-js">
+// Ejemplo de uso
+const array = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251,257,263,269,271,277,281,283,293,307,311,313,317,331,337,347,349,353,359,367,373,379,383,389,397,401,409,419,421,431,433,439,443,449,457,461,463,467,479,487,491,499,503,509,521,523,541,547,557,563,569,571,577,587,593,599,601,607,613,617,619,631,641,643,647,653,659,661,673,677,683,691,701,709,719,727,733,739,743,751,757,761,769,773,787,797,809,811,821,823,827,829,839,853,857,859,863,877,881,883,887,907,911,919,929,937,941,947,953,967,971,977,983,991,997,1009];
+const target = 909;
+
+const startTime = performance.now();
+const result = findPairSum(array, target);
+const endTime = performance.now();
+console.log(`Tiempo de ejecución de findPairSum: ${(endTime - startTime).toFixed(4)} ms`);
+
+const startTimeHash = performance.now();
+const resultHash = findPairSumWithHash(array, target);
+const endTimeHash = performance.now();
+console.log(`Tiempo de ejecución de findPairSumWithHash: ${(endTimeHash - startTimeHash).toFixed(4)} ms`);
+
+function findPairSum(array, target) {
+    for (let i = 0; i < array.length; i++) {
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[i] + array[j] === target) {
+                return {index1: i, element1: array[i], index2: j, element2: array[j], sum: target};
+            }
+        }
+    }
+    return null;
+}
+
+function findPairSumWithHash(array, target) {
+    const hashMap = {};
+    for (let i = 0; i < array.length; i++) {
+        const num = array[i];
+        const complement = target - num;
+        if (hashMap[complement] !== undefined) {
+            return {index1: hashMap[complement], element1: complement, index2: i, element2: num, sum: target};
+        }
+        hashMap[num] = i;
+    }
+    return null;
+}
+
+// Mostrar los resultados de findPairSum
+if (result) {
+    console.log(`Encontrado: Elementos en los índices ${result.index1} y ${result.index2} suman ${result.sum} (${result.element1} + ${result.element2})`);
+} else {
+    console.log('No se encontró ninguna pareja que sume el valor objetivo en findPairSum.');
+}
+
+// Mostrar los resultados de findPairSumWithHash
+if (resultHash) {
+    console.log(`Encontrado: Elementos en los índices ${resultHash.index1} y ${resultHash.index2} suman ${resultHash.sum} (${resultHash.element1} + ${resultHash.element2})`);
+} else {
+    console.log('No se encontró ninguna pareja que sume el valor objetivo en findPairSumWithHash.');
+}
+        </code>
+        </pre>
+
+    </section>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>

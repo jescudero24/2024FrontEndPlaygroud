@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codeWars - List Filtering</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .explain {
+        display: block;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        background: #eee;
+      }
+
+      #inputText,
+      #outputText {
+        display: block;
+        border: 1px solid #444;
+        width: 90vw;
+        height: 3em;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: lightblue;
+        font-family: "Courier New", Courier, monospace;
+      }
+      #outputText {
+        font-size: 1.2em;
+      }
+      button {
+        padding: 10px;
+        margin: 10px;
+        background-color: darkblue;
+        color: #09f;
+        border-radius: 10px;
+      }
+      .kata {
+        width: 100%;
+        padding: 10px;
+      }
+      textarea {
+        min-height: 3em;
+        /*form-sizing: content;*/ 
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/monokai.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+
+  </head>
+  <body>
+    <section class="kata">
+      <h1>CodeWars - List Filtering</h1>
+      <p>
+        problem::
+        <a href="https://www.codewars.com/kata/53dbd5315a3c69eed20002dd">ListFiltering</a><br>
+        In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+      <br>
+
+        testing case:
+      <pre>
+        filter_list([1,2,'a','b']) == [1,2]
+        filter_list([1,'a','b',0,15]) == [1,0,15]
+        filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+        </pre>
+      </p>
+
+<pre>
+    <code class="language-js">
+function filter_list(l) {
+  const filtered=l.filter(a => Number.isInteger(a));
+  return filtered;
+}
+
+    </code>
+</pre>
+
+<div class="playground">
+    <!-- Input para introducir el texto -->
+    <textarea id="inputText" placeholder="Input"></textarea>
+
+    <!-- Botón que ejecuta la función -->
+    <button id="processButton">Procesar</button>
+
+    <!-- Espacio donde se muestra el resultado -->
+    <div id="outputText">Output</div>
+
+    <!-- Script que incluye la función y la lógica para manejar el evento del botón -->
+    <script>
+        // Definimos la función twoSum aquí para ser usada dentro de procesarInputText
+        function filter_list(l) {
+          const filtered=l.filter(a => Number.isInteger(a));
+          return filtered;
+        }
+
+        function procesarInputText() {
+            // Obtener el valor del textarea
+            var input = document.getElementById("inputText").value;
+
+            // Reemplazar comillas simples con dobles para evitar errores de parseo
+            var sanitizedInput = input.replace(/'/g, '"');
+
+            try {
+                // Parsear el input como un array de JavaScript
+                var list = JSON.parse(sanitizedInput);
+                
+                // Filtrar la lista para obtener solo enteros
+                var result = filter_list(list);
+
+                // Mostrar el resultado
+                document.getElementById("outputText").innerHTML = result.length > 0 ? '[' + result.join(', ') + ']' : 'No hay números enteros en la lista.';
+            } catch (e) {
+                // Manejar error si el input no es un JSON válido
+                document.getElementById("outputText").innerHTML = 'Error: El input debe ser un array válido de JSON. Asegúrate de que los strings estén entre comillas dobles.';
+            }
+        }
+
+        // Añadir un event listener al botón
+        document.getElementById("processButton").addEventListener("click", procesarInputText);
+    </script>
+</div>
+
+
+    </section>
+
+    <section class="explain">
+      <ul>
+        <strong>Referencias y documentación</strong>
+        <li>
+          <strong>solución::</strong> https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/solutions/javascript
+        </li>
+        <li><strong>Manz::</strong>https://lenguajejs.com/javascript/arrays/que-es/</li>
+        <li>
+          <strong>MDN::</strong>
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort</li>
+        <li>
+          <strong>MDN::</strong>
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted</li>
+          <li><strong>YTB::</strong>https://youtu.be/MlgFhWvxuJk (HashMap)</li>
+      </ul>
+      <ul>
+        <strong>Herramientas</strong>
+        <li><b>codi.link::</b> https://codi.link/||</li>
+        <li>
+          <b>numerosPrimos::</b>
+          https://math-center.ams3.cdn.digitaloceanspaces.com/worksheets/es-decimal-comma/numbers/prime-numbers/first-1000-prime-numbers.pdf        </li>
+      </ul>
+      <img src="../000/Manz_JS_array.jpg">
+
+      <div class="videoYTB">
+
+      </div>
+
+      <hr>
+
+      <div id="markdownContent" style="display:none;">
+
+
+      </div>
+
+      <div id="markdownHtmlOutput">
+        <!-- El HTML convertido se mostrará aquí -->
+     </div>
+     
+     <script>
+        window.onload = function() {
+          // Crear una instancia del convertidor de Showdown
+          var converter = new showdown.Converter();
+      
+          // Obtener el texto Markdown del div
+          var markdownText = document.getElementById('markdownContent').innerText;
+      
+          // Convertir Markdown a HTML
+          var html = converter.makeHtml(markdownText);
+      
+          // Mostrar el HTML en otro div
+          document.getElementById('markdownHtmlOutput').innerHTML = html;
+        };
+      </script>
+  
+
+    </section>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>
