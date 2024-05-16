@@ -27,12 +27,12 @@ function obtenerDiaDelAno() {
 function mostrarInformacion() {
     document.getElementById('semana').innerText = "Semana del año: " + obtenerSemanaDelAno();
     document.getElementById('dia').innerText = "Día del año: " + obtenerDiaDelAno();
-    document.getElementById('eslpod').innerText = "EslPod: " + obtenerDiaDelAno() 
+    document.getElementById('eslpod').innerText = "EslPod (1-1305): " + obtenerDiaDelAno() 
     + ', ' + (obtenerDiaDelAno()+365) 
     + ', '+ (obtenerDiaDelAno()+(2*365))
-    + ', '+ (obtenerDiaDelAno()+(3*365))
-    ;
-
+    + ', '+ (obtenerDiaDelAno()+(3*365));
+    document.getElementById('ecpod').innerText = "ECPod (1-603): " + obtenerDiaDelAno() 
+    + ', ' + (obtenerDiaDelAno()+365);
 }
 
 // Llama a mostrarInformacion() cuando la página se haya cargado completamente
